@@ -1,0 +1,8 @@
+{
+  "extends": ["next/core-web-vitals", "airbnb", "prettier"],
+  "rules": {
+    "no-bitwise": "off",
+    "import/no-unresolved": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
