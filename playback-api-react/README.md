@@ -1,6 +1,16 @@
 # Playerback API Sample App - React
 
-This React / next.js sample app demonstrates how to integrate with BlendVision One Playback API, get playback info and play with the player SDK.
+This React / next.js sample app demonstrates how to integrate with BlendVision One Playback API, get playback info and play with the player component provided by the player SDK.
+
+You may also refer to [this guide](https://support.one.blendvision.com/hc/en-us/articles/19704999298457-Quickstart-Playback-a-BlendVision-One-Stream) for BV One playback integration.
+
+**DRM integration**
+
+DRM integration is also included in this sample app, this part is required if you want to use DRM protected stream.
+
+Caution: License requests accepts `x-custom-data` header instead.
+
+If you are not using BV One player SDK, please refer to this guide](https://support.one.blendvision.com/hc/en-us/articles/20013861360537-Quickstart-Request-DRM-license)
 
 ## How to Run this Sample App
 
