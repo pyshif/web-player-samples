@@ -15,6 +15,12 @@ const Home = () => {
       resourceId: '<resource-id>',
     }).then(setSource)
   }, [])
+  const drmOptions = source.licenseUrl && {
+    licenseUri: `${source.licenseUrl}/api/v3/drm/license`,
+    headers: {
+      'X-Custom-Data': `token_type=upfront&token_value=${source.playbackToken}`,
+    },
+  }
 
   return (
     <>
@@ -26,8 +32,22 @@ const Home = () => {
         {source ? (
           <PremiumPlayer
             source={[
-              {type: 'dash', src: source.dash},
-              {type: 'hls', src: source.hls},
+              {
+                type: 'dash',
+                src: source.dash,
+                drm: {widevine: drmOptions, playready: drmOptions},
+              },
+              {
+                type: 'hls',
+                src: source.hls,
+                drm: {
+                  fairplay: {
+                    ...drmOptions,
+                    certificateUri: `${source.licenseUrl}/api/v3/drm/license/fairplay_cert`,
+                    certificateHeaders: drmOptions.headers,
+                  },
+                }
+              },
             ]}
           />
         ) : (
