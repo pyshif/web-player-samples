@@ -30,10 +30,10 @@ const getStreamManifestUrls = async ({
 
   const deviceId = uuidv4()
   const headers = {Authorization: `Bearer ${playbackToken}`}
-  await fetch(`${API_HOST}/playback/v1/sessions/${deviceId}:start`, {
-    method: 'POST',
-    headers,
-  })
+  const {drm_server_endpoint: licenseUrl} = await fetch(
+    `${API_HOST}/playback/v1/sessions/${deviceId}:start`,
+    {method: 'POST', headers}
+  ).then(res => res.json())
   const streamInfo = await fetch(
     `${API_HOST}/playback/v1/sessions/${deviceId}`,
     {headers}
@@ -45,6 +45,7 @@ const getStreamManifestUrls = async ({
     dash: manifests.find(manifest => manifest.protocol === 'PROTOCOL_DASH')
       ?.url,
     hls: manifests.find(manifest => manifest.protocol === 'PROTOCOL_HLS')?.url,
+    licenseUrl,
     playbackToken,
   }
 }
