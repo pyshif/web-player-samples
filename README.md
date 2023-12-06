@@ -7,3 +7,7 @@ This repository contains sample apps using the BlendVision One Web Player SDK.
 **[playback-api-react](playback-api-react/)**
 
 Demonstrates how to integrate with BlendVision One Playback API in a React app.
+
+**[audio](audio/)**
+
+Demonstrates how to integrate with BlendVision One Playback API in audio streaming.
