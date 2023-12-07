@@ -2,7 +2,7 @@
 
 This React / next.js sample app demonstrates how to integrate with BlendVision One Playback API, get playback info and play with the player component provided by the player SDK.
 
-You may also refer to BlendVision <a href="https://developers.blendvision.com/docs/player/web-sdk/quick-start" target="_blank"> Getting Started</a> integration guide.
+You may also refer to BlendVision [Getting Started](https://developers.blendvision.com/docs/player/web-sdk/quick-start) integration guide.
 
 
 
