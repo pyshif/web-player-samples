@@ -8,9 +8,8 @@ You may also refer to BlendVision [Getting Started](https://developers.blendvisi
 
 DRM integration is also included in this sample app, this part is required if you want to use DRM protected stream.
 
-:::warning CAUTION
-<br> License requests accept `x-custom-data` header instead.
-:::
+> [!Important]  
+> License requests accept `x-custom-data` header instead.
 
 If you are not using BV One player SDK, please refer to this [guide](https://developers.blendvision.com/docs/content-protection/drm-license) for request BlendVision DRM license.
 
