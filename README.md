@@ -11,3 +11,7 @@ Demonstrates how to integrate with BlendVision One Playback API in a React app.
 **[audio](audio/)**
 
 Demonstrates how to integrate with BlendVision One Playback API in audio streaming.
+ 
+**[basic-analysis](basic-analysis/)**
+
+Demonstrates the configuration for sending analytics events for basic analysis.
