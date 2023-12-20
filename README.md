@@ -1,6 +1,6 @@
-# BlendVision One Web Player Samples
+# BlendVision Web Player SDK Samples
 
-This repository contains sample apps using the BlendVision One Web Player SDK.
+This repository contains sample apps using the BlendVision Web Player SDK.
 
 ## Available Sample Apps
 
