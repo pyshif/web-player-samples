@@ -15,3 +15,7 @@ Demonstrates how to integrate with BlendVision One Playback API in audio streami
 **[basic-analysis](basic-analysis/)**
 
 Demonstrates the configuration for sending analytics events for basic analysis.
+
+**[casting](casting/)**
+
+Explains how to stream video and audio directly to device with BlendVision One Playback API.
