@@ -1,6 +1,7 @@
 # Basic Casting
 
-##  Google Cast Integration
+## Google Cast Integration
+
 This sample project showcases how to casting your content to devices via [Google Cast (ChromeCast)](https://developers.google.com/cast).
 The Cast receiver player plays with DASH manifest, so you should provide DASH manifest URL in source.
 
@@ -8,7 +9,7 @@ The Cast receiver player plays with DASH manifest, so you should provide DASH ma
 
 Web Sender apps need to support HTTPS to maintain Cast compatibility, as browsers have deprecated support for the Presentation API on insecure origins. (ref. [Google cast](https://developers.google.com/cast/docs/web_sender))
 
-*A local server to host your app is needed.*
+_A local server to host your app is needed._
 
 ### Receiver application ID
 
