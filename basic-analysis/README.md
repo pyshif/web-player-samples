@@ -18,7 +18,8 @@ You may also refer to [this guide](https://support.one.blendvision.com/hc/en-us/
 
     - `analytics.resourceType`: The field is optional, this might indicate the type or category of the resource mentioned above.
 
-    - `analytics.customData`: The field is optional, this seems to be a placeholder for custom data that you can include in your analytics events, allowing you to send additional information as needed.
+    - `analytics.<customProperty>`: The field is optional, this is a placeholder for custom data that you can include in your analytics events, allowing you to send additional information as needed, for example `analytics.my_log_prop`` will add `property my_log_prop`.
+
 
 **DRM integration**
 
