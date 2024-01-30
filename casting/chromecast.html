@@ -12,7 +12,7 @@
       href="https://assets-global.website-files.com/63c799a4fa41261ff1f92fd4/64213c9730d27c215422b7f9_01-favicon%20(2).png"
       rel="apple-touch-icon"
     />
-    <title>BlendVision One Web Player Samples | Basic Analysis</title>
+    <title>BlendVision One Web Player Samples | Chrome cast</title>
     <style>
       * {
         box-sizing: border-box;
@@ -22,14 +22,14 @@
         margin: 0;
         font-size: "16px";
       }
-      .player {
+      #my-player {
         height: 100vh;
       }
-      .on-device .player {
+      .on-device #my-player {
         height: calc(100vh - 50px);
       }
       @media screen and (orientation: portrait) {
-        .device-ios .player {
+        .device-ios #my-player {
           height: calc(100vh - 114px);
         }
       }
@@ -39,16 +39,10 @@
     <div id="my-player"></div>
     <script src="https://unpkg.com/@blendvision/player@2.10.0"></script>
     <script>
-      const modulesConfig = {
-        ["analytics.token"]: "YOUR BV PLAYER ANALYTICS TOKEN",
-        // 'analytics.session_id': 'YOUR SESSION ID',
-        // 'analytics.resource_id': 'YOUR RESOURCE ID',
-        // 'analytics.resource_type': 'YOUR RESOURCE TYPE',
-      };
       const config = {
         license: "YOUR BV PLAYER LICENSE KEY",
-        title: "BlendVision One Web Player Samples | Basic Analysis",
-        ui: { uiMode: "standalone" },
+        title: "BlendVision One Web Player Samples | Chrome cast",
+        ui: { uiMode: "embedded" },
         source: [
           {
             type: "application/dash+xml",
@@ -59,7 +53,7 @@
             src: "YOUR HLS SOURCE",
           },
         ],
-        modulesConfig,
+        castReceiverAppId: "YOUR RECEIVER APPLICATION ID",
       };
 
       const BvPlayer = BlendVision.default;
