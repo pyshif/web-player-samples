@@ -8,6 +8,10 @@ This repository contains sample apps using the BlendVision Web Player SDK.
 
 Start here if you are new to web apps with video playback. This sample app demonstrates how to play a video with the SDK.
 
+### UI Libraries / Frameworks
+
+**[react](react/)**
+
 ### Features
 
 **[audio](audio/)**
