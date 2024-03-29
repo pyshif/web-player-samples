@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BV Web Player Sample - Basic Playback</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background-color: #333;
+      }
+      #my-player {
+        margin: 1.5rem;
+        height: 93dvh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my-player"></div>
+    <script src="https://unpkg.com/@blendvision/player@2.13.0"></script>
+    <script>
+      const player = BlendVision.createPlayer('my-player', {
+        // license is optional in local development, ensure to add it for production
+        // license: 'YOUR BV PLAYER LICENSE KEY',
+        title: 'BlendVision One',
+        source: [
+          {
+            type: 'application/dash+xml',
+            src: 'https://d2mxta927rohme.cloudfront.net/376c618f-b27a-4a3d-9457-ad7076ee87e3/vod/dea931c3-8766-477d-a87b-1c3f91490139/vod/dash.mpd',
+          },
+          {
+            type: 'application/x-mpegurl',
+            src: 'https://d2mxta927rohme.cloudfront.net/376c618f-b27a-4a3d-9457-ad7076ee87e3/vod/dea931c3-8766-477d-a87b-1c3f91490139/vod/hls.m3u8',
+          },
+        ],
+      })
+    </script>
+  </body>
+</html>
