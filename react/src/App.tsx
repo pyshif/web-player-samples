@@ -7,11 +7,11 @@ import { useMemo } from 'react';
 const staticVideoSources = [
   {
     type: 'application/dash+xml',
-    src: 'https://d2mxta927rohme.cloudfront.net/sample/video/vod/dash.mpd',
+    src: 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths/dash.mpd',
   },
   {
     type: 'application/x-mpegurl',
-    src: 'https://d2mxta927rohme.cloudfront.net/sample/video/vod/hls.m3u8',
+    src: 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8',
   },
 ];
 
@@ -20,11 +20,11 @@ function App() {
   const memoizedVideoSources = useMemo(() => [
     {
       type: 'application/dash+xml',
-      src: 'https://d2mxta927rohme.cloudfront.net/sample/video/vod/dash.mpd',
+      src: 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths/dash.mpd',
     },
     {
       type: 'application/x-mpegurl',
-      src: 'https://d2mxta927rohme.cloudfront.net/sample/video/vod/hls.m3u8',
+      src: 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8',
     },
   ], []); // Empty dependency array ensures memoization
 
