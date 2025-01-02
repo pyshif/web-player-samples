@@ -59,6 +59,10 @@
             src: "YOUR HLS SOURCE",
           },
         ],
+        onPlaylogFired: (event) => {
+          // Listen to the playlog event
+          console.debug("onPlayLogFired", event);
+        },
         modulesConfig,
       };
 
