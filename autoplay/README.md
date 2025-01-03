@@ -10,8 +10,6 @@ The `autoplay` property allows you to control how and when the video starts play
 | --------- | ------------------------------------------------------------------------------------ |
 | `true`    | Starts playing immediately if possible.                                              |
 | `false`   | Autoplay is disabled; user must click play.                                          |
-| `'muted'` | Autoplay only if the video is muted (bypasses autoplay restrictions).                |
-| `'play'`  | Autoplay if allowed; if blocked, video will attempt to start after user interaction. |
 
 ## 📋 How to Integrate
 
@@ -61,14 +59,12 @@ licenseKey: "YOUR BV PLAYER LICENSE KEY";
 ```
 
 ## 📝 Notes
-
-- Use `muted` or `any` for better autoplay support across different browsers.
 - Ensure the video source URLs point to valid media files.
 
 ## 🚀 How to Run this Sample App
 
 - Clone this repository
-- `cd` into the `basic-playback/autoplay` directory
+- `cd` into the `autoplay` directory
 - Start a local server:
 
 ```bash
