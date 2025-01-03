@@ -38,7 +38,7 @@ Use JavaScript to initialize and configure the player. Set the `autoplay` proper
 ```javascript
 const player = BlendVision.createPlayer("my-player", {
   title: "BlendVision One",
-  autoplay: "muted", // Adjust based on your needs
+  autoplay: false, // Adjust based on your needs, and its default value is false
   source: [
     {
       type: "application/dash+xml",
@@ -64,7 +64,6 @@ licenseKey: "YOUR BV PLAYER LICENSE KEY";
 
 - Use `muted` or `any` for better autoplay support across different browsers.
 - Ensure the video source URLs point to valid media files.
-
 
 ## 🚀 How to Run this Sample App
 
